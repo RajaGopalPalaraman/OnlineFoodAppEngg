@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/orderHotelNameView"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="@dimen/layout_order_view_order_hotel_city_view_text_size"
+        android:id="@+id/orderHotelCityView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_order_view_margin_top"
+        android:id="@+id/orderNetCostView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_marginTop="@dimen/layout_order_view_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_order_first_line_separator_width"
+        android:background="@color/colorLineBlue"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_order_view_margin_top"
+        android:id="@+id/orderItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_order_view_margin_top"
+        android:textSize="@dimen/layout_order_view_order_user_id_view_text_size"
+        android:visibility="gone"
+        android:id="@+id/orderUserIDView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_order_view_margin_top"
+        android:textSize="@dimen/layout_order_view_order_user_id_view_text_size"
+        android:visibility="gone"
+        android:id="@+id/orderTimeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_marginTop="@dimen/layout_order_view_final_line_margin_top"
+        android:layout_marginBottom="@dimen/layout_order_view_final_line_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_order_second_line_separator_width"
+        android:background="@android:color/black"/>
+
+</LinearLayout>

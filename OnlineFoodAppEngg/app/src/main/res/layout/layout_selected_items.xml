@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_selected_item_layout_height">
+
+    <TextView
+        android:layout_width="@dimen/layout_selected_item_item_name_width"
+        android:paddingLeft="@dimen/layout_selected_item_item_name_padding"
+        android:paddingRight="@dimen/dummy_padding_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:id="@+id/itemNameView"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:paddingStart="@dimen/layout_selected_item_item_name_padding"
+        android:paddingEnd="@dimen/dummy_padding_width"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/layout_selected_item_margin"
+        android:id="@+id/itemCountControllerLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="@dimen/layout_selected_item_count_control_layout_width"
+            android:gravity="center"
+            android:background="@drawable/green_border_rectangle"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="@dimen/layout_selected_item_count_control_views_width"
+                android:layout_height="wrap_content"
+                android:text="@string/minus"
+                android:id="@+id/incrementButton"
+                android:textColor="@android:color/holo_green_light"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:focusable="true"/>
+            <TextView
+                android:layout_width="@dimen/layout_selected_item_count_control_views_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/countView"
+                android:textColor="@android:color/holo_green_light"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="@dimen/layout_selected_item_count_control_views_width"
+                android:layout_height="wrap_content"
+                android:text="@string/plus"
+                android:textColor="@android:color/holo_green_light"
+                android:id="@+id/decrementButton"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="@dimen/layout_selected_item_amount_view_margin"
+            android:layout_width="@dimen/layout_selected_item_amount_view_width"
+            android:id="@+id/amountView"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="@dimen/layout_selected_item_amount_view_margin"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

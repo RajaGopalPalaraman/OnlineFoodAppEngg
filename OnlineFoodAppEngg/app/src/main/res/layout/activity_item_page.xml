@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_itempage_layout_padding"
+    android:id="@+id/itemPageRootLayout"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_itempage_title_text_padding_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemPagehotelTitleTextView"
+                android:textSize="@dimen/activity_itempage_title_text_size"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemPagehotelCommentTextView" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLineBlue" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/itemViewParentLayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemPageSelectedItemListView"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/activity_itempage_selectedItem_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selectedItems"
+                        android:layout_marginBottom="@dimen/activity_itempage_selectedItem_margin"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/itemPageEmptyCartView"
+                        android:text="@string/emptyCart"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/activity_itempage_selectedItem_margin"
+                    android:layout_marginBottom="@dimen/activity_itempage_selectedItem_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLineBlue" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:rotationY="180"
+        android:background="@android:color/holo_green_light"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemPageFooterLayout"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:rotationY="180"
+            android:textColor="@android:color/white"
+            android:onClick="navigateToBillPage"
+            android:text="@string/proceed" />
+
+        <TextView
+            android:paddingStart="@dimen/activity_itempage_footer_textView_padding"
+            android:id="@+id/netCostView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rotationY="180"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

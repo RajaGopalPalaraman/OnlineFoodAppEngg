@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:hint="@string/cardNo"
+        android:id="@+id/billLayoutCardNo"
+        android:inputType="number"
+        android:maxLength="16"
+        android:layout_width="@dimen/activity_login_edit_text_width"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="@string/cvv"
+        android:layout_marginTop="@dimen/view_bill_edittext_top_margin"
+        android:id="@+id/billLayoutCardCVV"
+        android:inputType="numberPassword"
+        android:maxLength="3"
+        android:layout_width="@dimen/activity_login_edit_text_width"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="@dimen/view_bill_button_top_margin"
+        android:id="@+id/billLayoutPayButton"
+        android:onClick="showSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
